@@ -1,25 +1,23 @@
 # Smart-Inventory-System
 Machine learning system for demand forecasting, anomaly detection, and automated stock recommendations for retail inventory optimization
 
-# Retail Forecasting + Anomaly Detection (XGBoost)
 
+Smart Inventory System adalah proyek Machine Learning yang terdiri dari:
 
-Project ini menyediakan pipeline end-to-end untuk memprediksi penjualan dan mendeteksi anomali menggunakan XGBoost (forecast) dan IsolationForest (anomaly).
+1. **Sales Forecasting** – memprediksi permintaan menggunakan model ML & time series.
+2. **Anomaly Detection** – mendeteksi penjualan/persediaan yang tidak normal.
 
+Struktur ini mengikuti standar industri agar mudah digunakan, dikembangkan, dan dipresentasikan sebagai portfolio profesional.
 
-## Cara pakai
-1. Install requirements
-2. Tempatkan dataset di `data/` dengan kolom `tanggal` dan `terjual` (sesuaikan `target_col` jika beda)
-3. Jalankan `src/retail_pipeline.py` dari notebook:
+---
 
+## 🔥 Fitur Utama
 
-from src.retail_pipeline import RetailPipeline
-pipe = RetailPipeline(target_col='terjual')
-pipe.run('data/dataset_retail.csv')
+- Prediksi penjualan berbasis time series (XGBoost, Prophet, ARIMA)
+- Anomali berbasis Isolation Forest & Z-Score
+- Pipeline bersih dan modular
+- Bisa langsung dipakai ulang untuk retail apa pun
 
+---
 
-4. Load model dan lakukan prediksi pada data baru
-
-
-## Struktur
-(Lihat dokumentasi di repository)
+## 📂 Struktur Project
